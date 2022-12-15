@@ -102,3 +102,13 @@ txtNombre.focus();
 
 
 });
+txtNombre.addEventListener("blur", function(e){
+    e.preventDefault();
+    txtNombre.value = txtNombre.value.trim();
+    //e.target.value = e.target.value.trim(); tambien funciona aca
+});
+txtNumber.addEventListener("blur", function(e){
+    e.preventDefault();
+    e.target.value = e.target.value.trim();
+   
+});
